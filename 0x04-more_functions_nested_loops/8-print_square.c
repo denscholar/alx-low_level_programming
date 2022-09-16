@@ -1,26 +1,25 @@
 #include "main.h"
 
 /**
- * print_diagonal - Print diagonal with \ which is 92 in ASCII
- * @n: how many to be printed
+ * print_square - Function to print square
+ * @size: The size to be printed
  *
- * Return: Always return 0
+ * Return: Always 0
  */
 
-void print_diagonal(int n)
+void print_square(int size)
 {
-	int count;
-	int space;
+	int rows;
+	int cols;
 
-	if (n > 0)
+	if (size > 0)
 	{
-		for (count = 0; count < n; count++)
+		for (cols = 0; cols < size; cols++)
 		{
-			for (space = 0; space < count; space++)
+			for (rows = 0; rows < size; rows++)
 			{
-				_putchar(' ');
+				_putchar(35);
 			}
-			_putchar(92);
 			_putchar('\n');
 		}
 	}
